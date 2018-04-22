@@ -8,7 +8,7 @@ extension Droplet {
             return json
         }
 
-        get("plaintext") { req in
+        get("sergio") { req in
             return "Hello, world!"
         }
 
