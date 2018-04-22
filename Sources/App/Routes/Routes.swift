@@ -11,6 +11,13 @@ extension Droplet {
         get("sergio") { req in
             return "Hello, world!"
         }
+        
+        get("calculate") { req in
+            var json = JSON()
+            try json.set("value", ["x" : 1.0, "y" : 2.0 ])
+            return json
+        }
+        
 
         // response to requests to /info domain
         // with a description of the request
